@@ -1,0 +1,12 @@
+{
+  "name": "slack-amazon-bot",
+  "private": true,
+  "dependencies": {
+    "amazon-product-api": "^0.3.10",
+    "apac": "^2.0.0",
+    "babel-cli": "^6.8.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "botkit": "^0.1.1",
+    "dotenv": "^2.0.0"
+  }
+}
