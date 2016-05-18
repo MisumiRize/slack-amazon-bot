@@ -8,5 +8,8 @@
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "botkit": "^0.1.1",
     "dotenv": "^2.0.0"
+  },
+  "scripts": {
+    "start": "babel-node index.js"
   }
 }
