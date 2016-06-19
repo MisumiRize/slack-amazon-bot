@@ -27,7 +27,6 @@ controller.storage.teams.get(message.team, function(err, team_data){
 */
 
 var Firebase = require('firebase');
-var FirebaseTokenGenerator = require('firebase-token-generator');
 
 module.exports = function(config, cb) {
 
