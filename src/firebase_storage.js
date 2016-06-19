@@ -35,14 +35,10 @@ module.exports = function(config, cb) {
         throw new Error('Need to provide firebase address. This should look something like ' +
             '"https://botkit-example.firebaseio.com/"');
 
-    var tokenGenerator = new FirebaseTokenGenerator(config.firebase_secret);
-    var token = tokenGenerator.createToken({
-        uid: config.uid,
-        expire: config.expire
-    });
     var rootRef = new Firebase(config.firebase_uri);
+    var cred = {email: config.firebase_email, password: config.firebase_password};
 
-    rootRef.authWithCustomToken(token, function(err) {
+    rootRef.authWithPassword(cred, function(err) {
         if (err) {
             throw new Error('Authentication failed');
         }

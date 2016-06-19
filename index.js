@@ -8,9 +8,8 @@ const createStorage = require('./src/firebase_storage')
 
 createStorage({
   firebase_uri: process.env.FIREBASE_URI,
-  firebase_secret: process.env.FIREBASE_SECRET,
-  uid: '1',
-  expire: 3000000000
+  firebase_email: process.env.FIREBASE_EMAIL,
+  firebase_password: process.env.FIREBASE_PASSWORD
 }, (storage) => {
 
   const controller = Botkit.slackbot({
