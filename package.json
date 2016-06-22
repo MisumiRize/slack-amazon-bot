@@ -13,6 +13,6 @@
   },
   "scripts": {
     "start": "babel-node index.js",
-    "prepublish": "babel src -d lib"
+    "postinstall": "babel src -d lib"
   }
 }
