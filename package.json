@@ -12,6 +12,7 @@
     "firebase": "^2.4.2"
   },
   "scripts": {
-    "start": "babel-node index.js"
+    "start": "babel-node index.js",
+    "prepublish": "babel src -d lib"
   }
 }
